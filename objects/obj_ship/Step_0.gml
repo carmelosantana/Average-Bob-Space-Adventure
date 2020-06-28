@@ -1,15 +1,47 @@
 if( global.player_alive ) {
-	// controls
-	if ( keyboard_check(vk_left) ) {
-		image_angle += 5;
+	// left click
+	if ( keyboard_check(vk_left) and !keyboard_check(vk_right) ) {
+		image_angle += max_image_angle;
 	}
+	if ( !keyboard_check(vk_left) and keyboard_check(vk_right) ) {
+		image_angle -= max_image_angle;
+	}
+	
+	// sets thruster lag	
+	if ( keyboard_check_released(vk_left) or keyboard_check_released(vk_right) ) {
+		if ( keyboard_check_released(vk_left) ) {
+			image_angle_lag = max_image_angle_lag;
+		} else {
+			image_angle_lag = -max_image_angle_lag;
+		}
+		image_acceleration = max_image_acceleration;
+	}	
 
-	if ( keyboard_check(vk_right) ) {
-		image_angle -= 5;
-	}
+	// resets img_acceleration when we're done moving
+	if ( image_acceleration > 0 ) {
+		if ( image_angle_lag > 0 ) {
+			image_angle_lag -= image_acceleration;
+			image_angle += image_acceleration;
+		
+		} else if ( image_angle_lag < 0 ) {
+			image_angle_lag += image_acceleration;
+			image_angle -= image_acceleration;
+		}
+		image_acceleration -= image_acceleration*image_deceleration_rate;
+
+	} else if ( image_acceleration < 0 ) {
+		image_acceleration = 0;
+		image_angle_lag = 0;
+	}	
 
 	if ( keyboard_check(vk_up) ) {
-		motion_add(image_angle, 0.06);
+		if ( direction == image_angle and speed > max_speed ){
+			speed = max_speed;
+			
+		} else {
+			motion_add(image_angle, 0.06);
+	
+		}		
 	}
 
 	if ( keyboard_check(vk_down) ) {
