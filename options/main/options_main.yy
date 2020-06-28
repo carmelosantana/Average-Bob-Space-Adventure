@@ -1,0 +1,18 @@
+{
+  "option_gameguid": "618d47d4-b24e-4c1f-8fb2-6b2af8d51e76",
+  "option_game_speed": 90,
+  "option_mips_for_3d_textures": false,
+  "option_draw_colour": 4294967295,
+  "option_window_colour": 255,
+  "option_steam_app_id": "0",
+  "option_sci_usesci": true,
+  "option_author": "Carmelo Santana",
+  "option_lastchanged": "27 June 2020 21:29:10",
+  "addon_amazon_apis": "",
+  "addon_google_play_services": "",
+  "option_spine_licence": false,
+  "resourceVersion": "1.1",
+  "name": "Main",
+  "tags": [],
+  "resourceType": "GMMainOptions",
+}
