@@ -23,7 +23,7 @@ switch(room){
 		var c = c_silver;
 		hh += 200;
 		draw_text_transformed_color(
-			ww, hh, "Space Odyssey",  
+			ww, hh, "Space Adventure",  
 			0.5, 0.5, 0, c, c, c, c, 1
 		);
 		
