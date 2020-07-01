@@ -1,6 +1,8 @@
 switch(room){
-	case rm_game:
+	case rm_level_0:
 		audio_play_sound(music_reggae_0, 9, true);
+		room_width = 3840;
+		room_height = 2160;
 		
 		// level 0
 		spawn_asteroids_stage_start(6);
@@ -10,7 +12,7 @@ switch(room){
 		init_game_room();
 		break
 		
-	case rm_gameover:
+	case rm_game_over:
 		audio_stop_sound(music_reggae_0);
 		audio_play_sound(snd_game_over, 5, false);
 		break;
