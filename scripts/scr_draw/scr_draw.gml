@@ -17,11 +17,11 @@ function draw_logo(ww, hh){
 	}
 }
 
-function draw_game_over(){
+function draw_game_over(ww, hh){
 	draw_set_halign(fa_center);
 	var c = c_red;
 	draw_text_transformed_color(
-		room_width/2, room_height*0.5, "Gameover!", 
+		ww, hh, "Gameover!", 
 		2, 2, 0, c, c, c, c, 1
 	);
 	draw_set_halign(fa_left);
