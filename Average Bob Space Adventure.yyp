@@ -35,6 +35,7 @@
     {"id":{"name":"spr_explode_64","path":"sprites/spr_explode_64/spr_explode_64.yy",},"order":9,},
     {"id":{"name":"spr_asteroid_32","path":"sprites/spr_asteroid_32/spr_asteroid_32.yy",},"order":1,},
     {"id":{"name":"obj_hit_marker","path":"objects/obj_hit_marker/obj_hit_marker.yy",},"order":6,},
+    {"id":{"name":"music_reggae_1","path":"sounds/music_reggae_1/music_reggae_1.yy",},"order":7,},
     {"id":{"name":"spr_blank","path":"sprites/spr_blank/spr_blank.yy",},"order":12,},
     {"id":{"name":"fnt_mono","path":"fonts/fnt_mono/fnt_mono.yy",},"order":1,},
     {"id":{"name":"img_space_0","path":"sprites/img_space_0/img_space_0.yy",},"order":13,},
