@@ -1,2 +1,2 @@
 /// @description Delay Message
-room_goto(rm_gameover);
+room_goto(rm_game_over);

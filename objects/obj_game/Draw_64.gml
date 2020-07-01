@@ -1,5 +1,5 @@
 switch(room){
-	case rm_game:
+	case rm_level_0:
 		draw_set_font(fnt_mono);
 		var c = c_white;
 		draw_text_transformed_color(
@@ -46,8 +46,10 @@ switch(room){
 		draw_set_halign(fa_left);
 		break;
 		
-	case rm_gameover:
-		draw_game_over();
+	case rm_game_over:
+		var ww = room_width/2;
+		var hh = room_height*0.2;
+		draw_game_over(ww, hh);
 		break;		
 }
 draw_set_font(fnt_primary);
