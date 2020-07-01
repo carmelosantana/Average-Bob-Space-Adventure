@@ -1,8 +1,30 @@
-# Average-Bob-Space-Adventure
+# Average Bob Space Adventure
 
 My first game! It's a space adventure.
 
-> Inspired by my son CJ.
+> Inspired by my son CJ. ♥
+
+## Requirements
+
+- GameMaker Studio 2 v2.3
+
+## Goals
+
+TODO:
+
+- [ ] Screen shake
+- [ ] Clean up enemy spawning
+- [ ] Basic enemy *"AI"*
+
+More long term:
+
+- [ ] Proper character development
+- [ ] A little story for Average Bob
+- [ ] Multiplayer
+
+## Recently Changed
+
+- [x] Added camera
 
 ## Additional Credits
 
