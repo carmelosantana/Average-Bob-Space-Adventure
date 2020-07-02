@@ -53,3 +53,14 @@ function check_point_in_camera(_xx, _yy, _pad) {
 	
 	return point_in_rectangle(_xx, _yy, camera_x, camera_y, camera_xx, camera_yy);
 }
+
+function parallax_background() {
+	layer_x("Parallax_0", global.camera_x*0.98);
+	layer_x("Parallax_0", global.camera_y*0.98);	
+
+	layer_x("Parallax_1", global.camera_x*0.93);	
+	layer_y("Parallax_1", global.camera_y*0.93);	
+
+	layer_x("Parallax_2", global.camera_x*0.89);	
+	layer_y("Parallax_2", global.camera_y*0.89);
+}
