@@ -13,7 +13,8 @@ switch(room){
 		room_height = 2160;
 		
 		// level 0
-		spawn_asteroids_stage_start(6);
+		instance_create_layer(room_width/2, room_height/2, "Instances", obj_ship);
+		spawn_off_screen(obj_asteroid, 10, 128);
 		alarm[0] = room_speed;
 
 		// room start
