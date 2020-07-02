@@ -1,4 +1,4 @@
-// draws large Space Bob logo
+// draws large Average Bob
 function draw_logo(ww, hh){
 	var colors;
 	colors[0] = c_green;
