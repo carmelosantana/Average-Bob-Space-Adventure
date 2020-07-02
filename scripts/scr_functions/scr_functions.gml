@@ -29,27 +29,27 @@ function generate_debris_explosion(_debris_repeat, _explosion, _explosion_repeat
 	}
 }
 
-function spawn_asteroids_stage_start(_repeat){
-	repeat(_repeat){
-		var xx = choose(
-			irandom_range(0, room_width*0.3),
-			irandom_range(room_width*0.3, 0)
-		);
-		var yy = choose(
-			irandom_range(0, room_height*0.3),
-			irandom_range(room_height*0.7, 0)
-		);
-	}
-	instance_create_layer(xx, yy, "Instances", obj_asteroid);
+function spawn_off_screen(_obj, _repeat, _pad){
+	var xx = irandom_range(0, room_width);
+	var yy = irandom_range(0, room_height);
+	
+	repeat ( _repeat ){
+		while ( check_point_in_camera(xx, yy, _pad) ){
+			xx = irandom_range(0, room_width);
+		}
+		while ( check_point_in_camera(xx, yy, _pad) ){
+			yy = irandom_range(0, room_height);
+		}
+				
+		instance_create_layer(xx, yy, "Instances", _obj);
+	}	
 }
 
-function spawn_asteroids(){
-	if ( choose(0, 1) == 0){
-		var xx = choose(0, room_width);
-		var yy = irandom_range(0, room_height);
-	} else {
-		var xx = irandom_range(0, room_width);
-		var yy = choose(0, room_height);			
-	}
-	instance_create_layer(xx, yy, "Instances", obj_asteroid);
+function check_point_in_camera(_xx, _yy, _pad) {
+	var camera_x = global.camera_x - _pad;
+	var camera_y = global.camera_y - _pad;
+	var camera_xx = global.camera_xx + _pad;
+	var camera_yy = global.camera_yy + _pad;
+	
+	return point_in_rectangle(_xx, _yy, camera_x, camera_y, camera_xx, camera_yy);
 }
