@@ -1,3 +1,5 @@
+check_global_input_actions();
+
 switch(room){
 	case rm_level_0:
 		if ( lives <= 0 ) {
