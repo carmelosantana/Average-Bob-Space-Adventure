@@ -22,6 +22,7 @@
     {"id":{"name":"snd_explode_deep_0","path":"sounds/snd_explode_deep_0/snd_explode_deep_0.yy",},"order":3,},
     {"id":{"name":"snd_bullet_1","path":"sounds/snd_bullet_1/snd_bullet_1.yy",},"order":0,},
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":0,},
+    {"id":{"name":"scr_controls","path":"scripts/scr_controls/scr_controls.yy",},"order":2,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":7,},
     {"id":{"name":"music_reggae_0","path":"sounds/music_reggae_0/music_reggae_0.yy",},"order":6,},
     {"id":{"name":"snd_explode_1","path":"sounds/snd_explode_1/snd_explode_1.yy",},"order":2,},
