@@ -13,7 +13,6 @@ My first game! It's a space adventure.
 TODO:
 
 - [ ] Screen shake
-- [ ] Clean up enemy spawning
 - [ ] Basic enemy *"AI"*
 
 More long term:
@@ -23,6 +22,13 @@ More long term:
 - [ ] Multiplayer
 
 ## Recently Changed
+
+v0.0.2
+
+- [x] Basic parallax background
+- [x] Clean up enemy spawning
+
+v0.0.1
 
 - [x] Added camera
 
