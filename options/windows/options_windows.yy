@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Average Bob Space Adventure",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "0.0.0.2",
+  "option_windows_version": "0.0.0.3",
   "option_windows_company_info": "carmelosantana.com",
   "option_windows_product_info": "Average Bob Space Adventure",
   "option_windows_copyright_info": "© 2020 Carmelo Santana",
