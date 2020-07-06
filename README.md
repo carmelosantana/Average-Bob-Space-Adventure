@@ -12,19 +12,31 @@ My first game! It's a space adventure.
 
 TODO:
 
+- [ ] FIX: Bug with bullet direction
+- [ ] Enemies
 - [ ] Screen shake
-- [ ] Basic enemy *"AI"*
+- [ ] Directional audio
+- [ ] Tutorial
+- [ ] Menu
+- [ ] Resolution by device
+- [ ] Proximity weapons
 
-More long term:
+Long term:
 
 - [ ] Proper character development
 - [ ] A little story for Average Bob
 - [ ] Multiplayer
 
-## Recently Changed
+## Changelog
+
+v0.0.3
+
+- [x] Factions
+- [x] Game states (running, paused)
 
 v0.0.2
 
+- [x] Added desktop controls for game reset + screenshot
 - [x] Basic parallax background
 - [x] Clean up enemy spawning
 
