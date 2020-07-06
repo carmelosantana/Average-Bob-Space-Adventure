@@ -34,8 +34,6 @@ with(other){
 	
 	score += points;
 	
-	var hit_marker = instance_create_layer(x, y, "Instances", obj_hit_marker);
-	
 	generate_debris_explosion(10, true, 1);
 	
 	instance_destroy();
