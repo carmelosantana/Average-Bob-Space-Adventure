@@ -69,8 +69,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7ca02907-7ec4-46c4-9246-64dddc480d8c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Asteroids",
+    "path": "folders/Sprites/Asteroids.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_asteroid_32",

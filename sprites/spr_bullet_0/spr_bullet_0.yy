@@ -69,8 +69,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"13241e22-186f-4b15-bf3b-e795d4422612","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Weapons",
+    "path": "folders/Sprites/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bullet_0",

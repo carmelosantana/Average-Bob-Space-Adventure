@@ -1,7 +1,6 @@
 {
   "bboxMode": 2,
   "collisionKind": 3,
-  "separateMasks": false,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -69,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bc753633-3445-4f39-a120-01e7732b33b2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Ally",
+    "path": "folders/Sprites/Ally.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ship_0",
