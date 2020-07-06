@@ -4,10 +4,12 @@ audio_stop_all();
 // setup rooms
 switch(room){
 	case rm_start:
+		global.game_state = game_states.menu;	
 		audio_play_sound(music_reggae_0, 9, true);
 		break;
 		
 	case rm_level_0:
+		global.game_state = game_states.running;
 		audio_play_sound(music_reggae_1, 9, true);
 		room_width = 3840;
 		room_height = 2160;
@@ -22,6 +24,7 @@ switch(room){
 		break
 		
 	case rm_game_over:
+		global.game_state = game_states.menu;	
 		audio_play_sound(snd_game_over, 5, false);
 		break;
 }		
