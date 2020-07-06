@@ -1,2 +1,3 @@
-move_wrap(true, true, sprite_width/2);
+MOVE_WRAP;
+
 image_angle += 1;

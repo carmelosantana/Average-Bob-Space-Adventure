@@ -1,3 +1,5 @@
+event_inherited();
+
 sprite_index = choose(
 	spr_asteroid_32,
 	spr_asteroid_64,

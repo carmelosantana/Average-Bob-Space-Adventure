@@ -49,9 +49,7 @@ if( global.player_alive ) {
 	}
 
 	if ( keyboard_check_pressed(vk_space) ) {
-		audio_play_sound(snd_bullet_1, 5, false);
-		var inst_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		inst_bullet.direction = image_angle;	
+		weapon_shoot(id, weapon, image_angle);
 	}
 	
 } else if ( !global.player_alive ) {
@@ -84,4 +82,4 @@ if( global.player_alive ) {
 	}
 }
 
-move_wrap(true, true, sprite_width/2);
+MOVE_WRAP;

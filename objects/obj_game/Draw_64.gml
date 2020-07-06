@@ -52,4 +52,5 @@ switch(room){
 		draw_game_over(ww, hh);
 		break;		
 }
+
 draw_set_font(fnt_primary);
