@@ -1,7 +1,15 @@
 check_global_input_actions();
 
+switch(global.game_state){
+	case game_states.running:
+		if ( keyboard_check_pressed(ord("P")) ) {
+			instance_create_layer(x, y, "Instances", obj_state_paused);
+		}
+		break;
+}
+
 switch(room){
-	case rm_level_0:
+	case rm_level_0:	
 		layer_x("Parallax_0", global.camera_x*0.5);
 		layer_y("Parallax_0", global.camera_y*0.5);	
 
